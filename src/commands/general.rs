@@ -33,9 +33,7 @@ struct General;
 fn bark(ctx: &mut Context, msg: &Message) -> CommandResult {
     let init_msg = "wooooooooooooooooooooooooooof";
     let mut bot_msg = msg.channel_id.say(&ctx.http, init_msg)?;
-    bot_msg.edit(&ctx, |m| {
-        m.content("bark")
-    })?;
+    bot_msg.edit(&ctx, |m| m.content("bark"))?;
     Ok(())
 }
 

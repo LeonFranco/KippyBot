@@ -4,10 +4,7 @@ use serenity::{
         macros::{command, group, help},
         Args, CommandGroup, CommandResult, HelpOptions,
     },
-    model::{
-        channel::Message,
-        id::UserId,
-    },
+    model::{channel::Message, id::UserId},
     prelude::*,
 };
 use std::collections::HashSet;
